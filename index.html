@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Callum Carver — Founder of The Kaizen | Entrepreneur & Business Coach</title>
-    <meta name="description" content="Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen and creator of Skill to Profit, helping people build profitable online businesses.">
+    <title>Callum Carver - Founder of The Kaizen | Entrepreneur & Business Coach</title>
+    <meta name="description" content="Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen and creator of Skill to Profit, helping over 500 people build profitable businesses from their existing skills.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Callum Carver — Founder of The Kaizen">
+    <meta property="og:title" content="Callum Carver - Founder of The Kaizen">
     <meta property="og:description" content="22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen. Helping people turn skills into profit.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://callumcarver.com">
@@ -16,7 +16,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ItsCallumCarver">
-    <meta name="twitter:title" content="Callum Carver — Founder of The Kaizen">
+    <meta name="twitter:title" content="Callum Carver - Founder of The Kaizen">
     <meta name="twitter:description" content="22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen. Helping people turn skills into profit.">
 
     <!-- Favicon -->
@@ -29,6 +29,7 @@
         "@type": "Person",
         "name": "Callum Carver",
         "url": "https://callumcarver.com",
+        "image": "https://callumcarver.com/img/callum-carver.jpg",
         "sameAs": [
             "https://www.instagram.com/callumcarver",
             "https://www.tiktok.com/@callumcarver",
@@ -47,12 +48,12 @@
             "name": "The Kaizen",
             "url": "https://thekaizen.co"
         },
-        "description": "Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen, an online coaching and mentorship company. Creator of Skill to Profit, a programme that has helped over 400 people build profitable online businesses.",
+        "description": "Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen, an online coaching and mentorship company. Creator of Skill to Profit, a programme that has helped over 500 people build profitable businesses from their existing skills, generating over $1.3 million in student revenue.",
         "birthPlace": {
             "@type": "Place",
             "name": "Manchester, United Kingdom"
         },
-        "knowsAbout": ["entrepreneurship", "online business", "coaching", "mentorship", "social media marketing", "freelancing", "skill monetisation"],
+        "knowsAbout": ["entrepreneurship", "online business", "coaching", "mentorship", "skill monetisation", "freelancing", "influencer marketing"],
         "nationality": {
             "@type": "Country",
             "name": "United Kingdom"
@@ -72,7 +73,7 @@
             "@type": "Person",
             "name": "Callum Carver"
         },
-        "description": "The Kaizen is an online coaching and mentorship company founded by Callum Carver. Our flagship programme, Skill to Profit, helps people monetise their skills and build profitable online businesses.",
+        "description": "The Kaizen is an online coaching and mentorship company founded by Callum Carver. The flagship programme, Skill to Profit, helps people monetise their existing skills and build profitable businesses. Over 500 students, $1.3M+ in student revenue generated.",
         "sameAs": [
             "https://www.trustpilot.com/review/thekaizen.co",
             "https://www.instagram.com/callumcarver",
@@ -145,6 +146,14 @@
             margin: 0 auto;
         }
 
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            width: 100%;
+        }
+
         .hero-content {
             max-width: 720px;
         }
@@ -171,6 +180,20 @@
             color: #555;
             max-width: 560px;
             margin-bottom: 40px;
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 4/5;
+            background: #f0f0f0;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .hero-links {
@@ -452,6 +475,16 @@
                 padding: 100px 20px 60px;
             }
 
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-image {
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
             section {
                 padding: 60px 20px;
             }
@@ -488,13 +521,20 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-tag">Entrepreneur &bull; Coach &bull; Manchester, UK</div>
-            <h1>Callum Carver</h1>
-            <p>I'm 22 years old and I run The Kaizen, an online coaching company that helps people turn their skills into profitable businesses. We've worked with over 400 students and built a multi-seven-figure business from scratch.</p>
-            <div class="hero-links">
-                <a href="https://thekaizen.co" class="btn-primary" target="_blank" rel="noopener">Visit The Kaizen</a>
-                <a href="https://skilltoprofit.co" class="btn-secondary" target="_blank" rel="noopener">Skill to Profit</a>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-tag">Entrepreneur &bull; Coach &bull; Manchester, UK</div>
+                <h1>Callum Carver</h1>
+                <p>I'm 22 and I run The Kaizen, an online coaching company that helps people turn skills they already have into profitable businesses. Over 500 students. $1.3M+ in student revenue generated. Built from my bedroom in Manchester.</p>
+                <div class="hero-links">
+                    <a href="https://thekaizen.co" class="btn-primary" target="_blank" rel="noopener">Visit The Kaizen</a>
+                    <a href="https://skilltoprofit.co" class="btn-secondary" target="_blank" rel="noopener">Skill to Profit</a>
+                </div>
+            </div>
+            <!-- PHOTO: Add a professional headshot or portrait here -->
+            <!-- Save your photo as img/callum-carver.jpg in this folder -->
+            <div class="hero-image">
+                <img src="img/callum-carver.jpg" alt="Callum Carver, founder of The Kaizen">
             </div>
         </div>
     </section>
@@ -503,18 +543,18 @@
     <section id="about">
         <div class="section-label">About</div>
         <h2>Building businesses that<br>change people's lives</h2>
-        <p>I started my first online business at 17 with no money, no connections, and no experience. By 20, I was earning over $20,000 a month. Now at 22, I run The Kaizen — a coaching and mentorship company that helps people do the same thing I did, but faster.</p>
-        <p>I don't believe in gatekeeping. Everything I've learned about building an online business — from finding a skill to landing clients to scaling past six figures — I teach through our Skill to Profit programme.</p>
+        <p>I found entrepreneurship at 17 through a crumpled copy of Rich Dad, Poor Dad and a TikTok video. Started with affiliate marketing, tried brand sponsorships, social media management, ran a failed SMMA, and eventually found my lane in coaching people to monetise the skills they already have.</p>
+        <p>I turned down a £20,000/year estate agent job at 18 because it worked out to £7 an hour. Five years later, The Kaizen does $70-100K a month and I've helped over 500 people build businesses from their existing skill sets.</p>
 
         <div class="about-grid">
             <div>
                 <div class="stat">
-                    <div class="stat-number">400+</div>
-                    <div class="stat-label">Students coached through Skill to Profit</div>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">People coached through Skill to Profit</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">$70-100K</div>
-                    <div class="stat-label">Monthly revenue at The Kaizen</div>
+                    <div class="stat-number">$1.3M+</div>
+                    <div class="stat-label">Revenue generated by our students</div>
                 </div>
             </div>
             <div>
@@ -537,20 +577,20 @@
 
         <div class="philosophy-grid">
             <div class="philosophy-card">
-                <h3>Skills before strategies</h3>
-                <p>The fastest path to income isn't finding a "hack." It's becoming genuinely good at something people will pay for. A real skill is the foundation everything else is built on.</p>
+                <h3>Sell what you already know</h3>
+                <p>You don't need to learn a brand new skill from scratch. Most people already have something valuable. They just don't know how to package and sell it properly.</p>
             </div>
             <div class="philosophy-card">
-                <h3>Speed of execution</h3>
-                <p>Most people spend months planning and never launch. I teach people to take action within days, learn from real feedback, and iterate quickly. Momentum beats perfection.</p>
+                <h3>Speed over perfection</h3>
+                <p>I've done speed runs going from zero to £10K in 37 days using the Skill to Profit framework. Most people spend months planning and never launch. Move fast, learn from real feedback, adjust.</p>
             </div>
             <div class="philosophy-card">
-                <h3>No shortcuts, no gimmicks</h3>
-                <p>I'm not interested in get-rich-quick schemes. Building a real business takes effort, patience, and discipline. The results are worth it because the work is real.</p>
+                <h3>No copied business models</h3>
+                <p>I wasted months trying to copy other people's agency models. It doesn't work. Your business should be built around your skills and experience, not someone else's template.</p>
             </div>
             <div class="philosophy-card">
-                <h3>Constant improvement</h3>
-                <p>"Kaizen" is the Japanese word for continuous improvement. That's not just a name — it's how we operate. Every day, get a little better at your craft and your business.</p>
+                <h3>Continuous improvement</h3>
+                <p>"Kaizen" is the Japanese word for continuous improvement. Get a little better every day at your craft and your business. That's the whole philosophy.</p>
             </div>
         </div>
     </section>
@@ -559,28 +599,28 @@
     <section id="kaizen">
         <div class="section-label">The Kaizen</div>
         <h2>What we're building</h2>
-        <p>The Kaizen is an online coaching and mentorship company based in Manchester, UK. Our mission is to help people monetise their skills and build businesses that give them freedom.</p>
+        <p>The Kaizen started as a newsletter about health, wealth and mindset. It grew to 60,000 subscribers before I ever sold anything. Now it's a full coaching and mentorship company with a team of 15+ people, built around one idea: help people turn skills they already have into real businesses.</p>
 
         <div class="kaizen-overview">
             <h3>Skill to Profit Programme</h3>
-            <p style="color: #555; font-size: 0.95rem; margin-bottom: 24px;">Our flagship programme takes people from zero to a profitable online business. Here's what's inside:</p>
+            <p style="color: #555; font-size: 0.95rem; margin-bottom: 24px;">Our flagship programme takes people from a skill they're being underpaid for to a business they own. Three phases: Learn, Earn, Scale.</p>
 
             <div class="kaizen-features">
                 <div class="feature">
                     <div class="feature-dot"></div>
-                    <span>Identify and package a high-income skill</span>
+                    <span>Identify and package a skill you already have</span>
                 </div>
                 <div class="feature">
                     <div class="feature-dot"></div>
-                    <span>Build an offer that people want to buy</span>
+                    <span>Build an offer that people actually want to buy</span>
                 </div>
                 <div class="feature">
                     <div class="feature-dot"></div>
-                    <span>Land your first paying clients organically</span>
+                    <span>Land your first paying clients through outreach</span>
                 </div>
                 <div class="feature">
                     <div class="feature-dot"></div>
-                    <span>Scale with systems and automation</span>
+                    <span>Scale with systems, AI tools and automation</span>
                 </div>
                 <div class="feature">
                     <div class="feature-dot"></div>
@@ -588,7 +628,7 @@
                 </div>
                 <div class="feature">
                     <div class="feature-dot"></div>
-                    <span>Community of 400+ active students</span>
+                    <span>Community of 500+ students on the same path</span>
                 </div>
             </div>
         </div>
@@ -598,7 +638,7 @@
     <section id="press">
         <div class="section-label">Featured In</div>
         <h2>Press & Media</h2>
-        <p>I've been featured across publications and podcasts talking about entrepreneurship, building online businesses, and the journey of starting young.</p>
+        <p>Featured across publications and podcasts talking about entrepreneurship, building online businesses and the journey of starting young.</p>
 
         <div class="press-logos">
             <a href="https://thevoiceoflondon.co.uk/meet-callum-carver-the-19-year-old-teaching-you-how-to-become-a-millionaire/" class="press-item" target="_blank" rel="noopener">Voice of London</a>
@@ -618,17 +658,17 @@
             <a href="/blog/how-i-built-the-kaizen" class="blog-card">
                 <div class="date">March 2026</div>
                 <h3>How I Built The Kaizen From My Bedroom to $100K/Month</h3>
-                <p>The full story of building an online coaching company from scratch — what worked, what didn't, and what I'd do differently.</p>
+                <p>The full story: affiliate marketing at 17, getting shut down by the SEC, turning down a £7/hour job, and eventually building a coaching company with 500+ students.</p>
             </a>
             <a href="/blog/skill-to-profit-explained" class="blog-card">
                 <div class="date">March 2026</div>
                 <h3>What Is Skill to Profit? A Complete Breakdown</h3>
-                <p>Everything you need to know about our flagship programme — who it's for, what's inside, and the results students are getting.</p>
+                <p>How we help people take skills they're already being paid for and turn them into businesses worth 3x, 5x, even 10x more.</p>
             </a>
-            <a href="/blog/lessons-from-400-students" class="blog-card">
+            <a href="/blog/lessons-from-500-students" class="blog-card">
                 <div class="date">March 2026</div>
-                <h3>What 400+ Students Taught Me About Building a Business</h3>
-                <p>After coaching hundreds of people, these are the patterns I see in people who succeed — and the ones who don't.</p>
+                <h3>What 500+ Students Taught Me About Building a Business</h3>
+                <p>After coaching over 500 people, the patterns are clear. From the intern who tripled his income to the 60-year-old retiree who started fresh.</p>
             </a>
         </div>
     </section>
