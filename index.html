@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callum Carver — Founder of The Kaizen | Entrepreneur & Business Coach</title>
+    <meta name="description" content="Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen and creator of Skill to Profit, helping people build profitable online businesses.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Callum Carver — Founder of The Kaizen">
+    <meta property="og:description" content="22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen. Helping people turn skills into profit.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://callumcarver.com">
+    <meta property="og:image" content="https://callumcarver.com/img/callum-carver-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ItsCallumCarver">
+    <meta name="twitter:title" content="Callum Carver — Founder of The Kaizen">
+    <meta name="twitter:description" content="22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen. Helping people turn skills into profit.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Person Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Callum Carver",
+        "url": "https://callumcarver.com",
+        "sameAs": [
+            "https://www.instagram.com/callumcarver",
+            "https://www.tiktok.com/@callumcarver",
+            "https://x.com/ItsCallumCarver",
+            "https://uk.linkedin.com/in/callum-carver-3392b7217",
+            "https://www.threads.net/@callumcarver",
+            "https://thekaizen.beehiiv.com",
+            "https://thekaizen.co",
+            "https://skilltoprofit.co",
+            "https://medium.com/@callumcarver",
+            "https://www.crunchbase.com/person/callum-carver"
+        ],
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "The Kaizen",
+            "url": "https://thekaizen.co"
+        },
+        "description": "Callum Carver is a 22-year-old entrepreneur from Manchester, UK. Founder of The Kaizen, an online coaching and mentorship company. Creator of Skill to Profit, a programme that has helped over 400 people build profitable online businesses.",
+        "birthPlace": {
+            "@type": "Place",
+            "name": "Manchester, United Kingdom"
+        },
+        "knowsAbout": ["entrepreneurship", "online business", "coaching", "mentorship", "social media marketing", "freelancing", "skill monetisation"],
+        "nationality": {
+            "@type": "Country",
+            "name": "United Kingdom"
+        }
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "The Kaizen",
+        "url": "https://thekaizen.co",
+        "logo": "https://thekaizen.co/img/logo.png",
+        "founder": {
+            "@type": "Person",
+            "name": "Callum Carver"
+        },
+        "description": "The Kaizen is an online coaching and mentorship company founded by Callum Carver. Our flagship programme, Skill to Profit, helps people monetise their skills and build profitable online businesses.",
+        "sameAs": [
+            "https://www.trustpilot.com/review/thekaizen.co",
+            "https://www.instagram.com/callumcarver",
+            "https://thekaizen.beehiiv.com"
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        nav .logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav .links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .links a:hover {
+            color: #1a1a1a;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 40px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-content {
+            max-width: 720px;
+        }
+
+        .hero-tag {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #555;
+            max-width: 560px;
+            margin-bottom: 40px;
+        }
+
+        .hero-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-links a {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #333;
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #1a1a1a;
+        }
+
+        .btn-secondary:hover {
+            background: #e8e8e8;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 16px;
+        }
+
+        section h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        section p {
+            font-size: 1.05rem;
+            color: #555;
+            max-width: 640px;
+            margin-bottom: 16px;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 48px;
+        }
+
+        .stat {
+            margin-bottom: 32px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        /* Philosophy Section */
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .philosophy-card {
+            padding: 32px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            transition: border-color 0.2s;
+        }
+
+        .philosophy-card:hover {
+            border-color: #ccc;
+        }
+
+        .philosophy-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .philosophy-card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* The Kaizen Section */
+        .kaizen-overview {
+            margin-top: 48px;
+            padding: 48px;
+            background: #fafafa;
+            border-radius: 16px;
+        }
+
+        .kaizen-overview h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .kaizen-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .feature-dot {
+            width: 8px;
+            height: 8px;
+            background: #1a1a1a;
+            border-radius: 50%;
+            margin-top: 8px;
+            flex-shrink: 0;
+        }
+
+        .feature span {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        /* Press Section */
+        .press-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            margin-top: 48px;
+        }
+
+        .press-item {
+            text-decoration: none;
+            color: #999;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+
+        .press-item:hover {
+            color: #1a1a1a;
+        }
+
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .blog-card {
+            text-decoration: none;
+            color: inherit;
+            padding: 32px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            transition: all 0.2s;
+        }
+
+        .blog-card:hover {
+            border-color: #ccc;
+            transform: translateY(-2px);
+        }
+
+        .blog-card .date {
+            font-size: 0.8rem;
+            color: #999;
+            margin-bottom: 12px;
+        }
+
+        .blog-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .blog-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-left h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .footer-left p {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-socials a {
+            text-decoration: none;
+            color: #888;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer-socials a:hover {
+            color: #1a1a1a;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 20px;
+            }
+
+            nav .links {
+                gap: 16px;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .kaizen-overview {
+                padding: 24px;
+            }
+
+            footer {
+                padding: 40px 20px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Callum Carver</a>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#kaizen">The Kaizen</a>
+            <a href="#press">Press</a>
+            <a href="#blog">Blog</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tag">Entrepreneur &bull; Coach &bull; Manchester, UK</div>
+            <h1>Callum Carver</h1>
+            <p>I'm 22 years old and I run The Kaizen, an online coaching company that helps people turn their skills into profitable businesses. We've worked with over 400 students and built a multi-seven-figure business from scratch.</p>
+            <div class="hero-links">
+                <a href="https://thekaizen.co" class="btn-primary" target="_blank" rel="noopener">Visit The Kaizen</a>
+                <a href="https://skilltoprofit.co" class="btn-secondary" target="_blank" rel="noopener">Skill to Profit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-label">About</div>
+        <h2>Building businesses that<br>change people's lives</h2>
+        <p>I started my first online business at 17 with no money, no connections, and no experience. By 20, I was earning over $20,000 a month. Now at 22, I run The Kaizen — a coaching and mentorship company that helps people do the same thing I did, but faster.</p>
+        <p>I don't believe in gatekeeping. Everything I've learned about building an online business — from finding a skill to landing clients to scaling past six figures — I teach through our Skill to Profit programme.</p>
+
+        <div class="about-grid">
+            <div>
+                <div class="stat">
+                    <div class="stat-number">400+</div>
+                    <div class="stat-label">Students coached through Skill to Profit</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">$70-100K</div>
+                    <div class="stat-label">Monthly revenue at The Kaizen</div>
+                </div>
+            </div>
+            <div>
+                <div class="stat">
+                    <div class="stat-number">362K</div>
+                    <div class="stat-label">Instagram followers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.7/5</div>
+                    <div class="stat-label">Trustpilot rating from verified students</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy">
+        <div class="section-label">Philosophy</div>
+        <h2>What I believe about building businesses</h2>
+
+        <div class="philosophy-grid">
+            <div class="philosophy-card">
+                <h3>Skills before strategies</h3>
+                <p>The fastest path to income isn't finding a "hack." It's becoming genuinely good at something people will pay for. A real skill is the foundation everything else is built on.</p>
+            </div>
+            <div class="philosophy-card">
+                <h3>Speed of execution</h3>
+                <p>Most people spend months planning and never launch. I teach people to take action within days, learn from real feedback, and iterate quickly. Momentum beats perfection.</p>
+            </div>
+            <div class="philosophy-card">
+                <h3>No shortcuts, no gimmicks</h3>
+                <p>I'm not interested in get-rich-quick schemes. Building a real business takes effort, patience, and discipline. The results are worth it because the work is real.</p>
+            </div>
+            <div class="philosophy-card">
+                <h3>Constant improvement</h3>
+                <p>"Kaizen" is the Japanese word for continuous improvement. That's not just a name — it's how we operate. Every day, get a little better at your craft and your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Kaizen -->
+    <section id="kaizen">
+        <div class="section-label">The Kaizen</div>
+        <h2>What we're building</h2>
+        <p>The Kaizen is an online coaching and mentorship company based in Manchester, UK. Our mission is to help people monetise their skills and build businesses that give them freedom.</p>
+
+        <div class="kaizen-overview">
+            <h3>Skill to Profit Programme</h3>
+            <p style="color: #555; font-size: 0.95rem; margin-bottom: 24px;">Our flagship programme takes people from zero to a profitable online business. Here's what's inside:</p>
+
+            <div class="kaizen-features">
+                <div class="feature">
+                    <div class="feature-dot"></div>
+                    <span>Identify and package a high-income skill</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-dot"></div>
+                    <span>Build an offer that people want to buy</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-dot"></div>
+                    <span>Land your first paying clients organically</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-dot"></div>
+                    <span>Scale with systems and automation</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-dot"></div>
+                    <span>1-on-1 and group coaching from the team</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-dot"></div>
+                    <span>Community of 400+ active students</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press -->
+    <section id="press">
+        <div class="section-label">Featured In</div>
+        <h2>Press & Media</h2>
+        <p>I've been featured across publications and podcasts talking about entrepreneurship, building online businesses, and the journey of starting young.</p>
+
+        <div class="press-logos">
+            <a href="https://thevoiceoflondon.co.uk/meet-callum-carver-the-19-year-old-teaching-you-how-to-become-a-millionaire/" class="press-item" target="_blank" rel="noopener">Voice of London</a>
+            <a href="https://talktwenties.com/podcast/how-callum-carver-earns-20k-per-month-at-age-20" class="press-item" target="_blank" rel="noopener">Talk Twenties</a>
+            <a href="https://creators.spotify.com/pod/profile/yearbookshow/episodes/How-Callum-Carver-Earns-20K-Per-Month-At-Age-20--Project-Kaizen-Steps-For-Success-e2cph2n" class="press-item" target="_blank" rel="noopener">YEARBOOK Podcast</a>
+            <a href="https://audioboom.com/posts/8393132-secrets-of-the-self-made-teenager-callum-carver-project-kaizen-importance-of-skill-stacking-smip" class="press-item" target="_blank" rel="noopener">UNBOXED</a>
+            <a href="https://saulderson.com/talent/callum-carver" class="press-item" target="_blank" rel="noopener">Saulderson Media</a>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <div class="section-label">Blog</div>
+        <h2>Latest thoughts</h2>
+
+        <div class="blog-grid">
+            <a href="/blog/how-i-built-the-kaizen" class="blog-card">
+                <div class="date">March 2026</div>
+                <h3>How I Built The Kaizen From My Bedroom to $100K/Month</h3>
+                <p>The full story of building an online coaching company from scratch — what worked, what didn't, and what I'd do differently.</p>
+            </a>
+            <a href="/blog/skill-to-profit-explained" class="blog-card">
+                <div class="date">March 2026</div>
+                <h3>What Is Skill to Profit? A Complete Breakdown</h3>
+                <p>Everything you need to know about our flagship programme — who it's for, what's inside, and the results students are getting.</p>
+            </a>
+            <a href="/blog/lessons-from-400-students" class="blog-card">
+                <div class="date">March 2026</div>
+                <h3>What 400+ Students Taught Me About Building a Business</h3>
+                <p>After coaching hundreds of people, these are the patterns I see in people who succeed — and the ones who don't.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <h4>Callum Carver</h4>
+            <p>Founder of The Kaizen &bull; Manchester, UK</p>
+            <p style="margin-top: 8px;">&copy; 2026 Callum Carver. All rights reserved.</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/callumcarver" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@callumcarver" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://x.com/ItsCallumCarver" target="_blank" rel="noopener">X / Twitter</a>
+            <a href="https://uk.linkedin.com/in/callum-carver-3392b7217" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.threads.net/@callumcarver" target="_blank" rel="noopener">Threads</a>
+            <a href="https://thekaizen.beehiiv.com" target="_blank" rel="noopener">Newsletter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
