@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built The Kaizen to $100K/Month by 22 — Callum Carver</title>
+    <meta name="description" content="Callum Carver shares how he built The Kaizen from nothing at 17 to a $100K/month coaching business by 22 — through affiliate marketing, failures, and launching Skill to Profit.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://callumcarver.com/blog/how-i-built-the-kaizen">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="How I Built The Kaizen to $100K/Month by 22 — Callum Carver">
+    <meta property="og:description" content="From TikTok affiliate marketing at 17 to retiring both my parents. The real story behind building The Kaizen and Skill to Profit.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://callumcarver.com/blog/how-i-built-the-kaizen">
+    <meta property="og:image" content="https://callumcarver.com/img/callum-carver-og.jpg">
+    <meta property="article:author" content="Callum Carver">
+    <meta property="article:published_time" content="2026-03-25T00:00:00Z">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ItsCallumCarver">
+    <meta name="twitter:title" content="How I Built The Kaizen to $100K/Month by 22">
+    <meta name="twitter:description" content="From TikTok affiliate marketing at 17 to retiring both my parents. The real story behind building The Kaizen and Skill to Profit.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Article Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How I Built The Kaizen to $100K/Month by 22",
+        "description": "Callum Carver shares how he built The Kaizen from nothing at 17 to a $100K/month coaching business by 22 — through affiliate marketing, failures, and launching Skill to Profit.",
+        "author": {
+            "@type": "Person",
+            "name": "Callum Carver",
+            "url": "https://callumcarver.com",
+            "sameAs": [
+                "https://www.instagram.com/callumcarver",
+                "https://www.tiktok.com/@callumcarver",
+                "https://x.com/ItsCallumCarver",
+                "https://uk.linkedin.com/in/callum-carver-3392b7217"
+            ]
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "The Kaizen",
+            "url": "https://thekaizen.co",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://thekaizen.co/img/logo.png"
+            }
+        },
+        "datePublished": "2026-03-25",
+        "dateModified": "2026-03-25",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://callumcarver.com/blog/how-i-built-the-kaizen"
+        },
+        "image": "https://callumcarver.com/img/callum-carver-og.jpg",
+        "url": "https://callumcarver.com/blog/how-i-built-the-kaizen",
+        "keywords": ["Callum Carver", "The Kaizen", "Skill to Profit", "how Callum Carver built The Kaizen", "online business", "coaching", "entrepreneurship"]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --red: #D13737;
+            --red-deep: #A02020;
+            --red-light: #E85555;
+            --black: #111111;
+            --dark-card: #1A1A1A;
+            --dark-border: #2a2a2a;
+            --grey-dark: #333333;
+            --grey-mid: #666666;
+            --grey-light: #999999;
+            --grey-text: #b5b5b5;
+            --white: #ffffff;
+            --off-white: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            color: var(--white);
+            line-height: 1.6;
+            background: var(--black);
+        }
+
+        h1, h2, h3, h4, .nav-text, .section-label {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        }
+
+        /* Nav */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(17,17,17,0.92);
+            backdrop-filter: blur(20px);
+            z-index: 100;
+            border-bottom: 1px solid var(--dark-border);
+        }
+
+        nav .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        nav .logo span { color: var(--red); }
+
+        nav .links { display: flex; gap: 32px; }
+
+        nav .links a {
+            text-decoration: none;
+            color: var(--grey-mid);
+            font-size: 0.82rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        nav .links a:hover { color: var(--white); }
+
+        /* Page header */
+        .page-header {
+            padding: 140px 40px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .page-header .hero-tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--red);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 20px;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        .page-header .subtitle {
+            font-size: 1.05rem;
+            color: var(--grey-text);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .page-header .meta {
+            margin-top: 20px;
+            font-size: 0.78rem;
+            color: var(--grey-mid);
+            font-weight: 500;
+        }
+
+        .page-header .meta span { color: var(--red); }
+
+        /* Article body */
+        .article-body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px 80px;
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-top: 56px;
+            margin-bottom: 16px;
+            line-height: 1.15;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .article-body h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 3px;
+            background: var(--red);
+            border-radius: 2px;
+        }
+
+        .article-body p {
+            font-size: 1rem;
+            color: var(--grey-text);
+            margin-bottom: 20px;
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+        .article-body a {
+            color: var(--red);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .article-body a:hover { color: var(--red-light); }
+
+        .article-body strong { color: var(--white); font-weight: 600; }
+
+        .article-body blockquote {
+            border-left: 3px solid var(--red);
+            padding: 16px 24px;
+            margin: 32px 0;
+            background: var(--dark-card);
+            border-radius: 0 8px 8px 0;
+        }
+
+        .article-body blockquote p {
+            color: var(--grey-text);
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        /* Divider */
+        .section-divider {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 1px;
+            background: var(--dark-border);
+        }
+
+        /* CTA block */
+        .cta-block {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 48px;
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 14px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--red);
+        }
+
+        .cta-block p {
+            font-size: 1rem;
+            color: var(--grey-text);
+            margin-bottom: 8px;
+        }
+
+        .cta-block p strong {
+            color: var(--white);
+            font-size: 1.15rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 36px;
+            background: var(--red);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.88rem;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover { background: var(--red-deep); box-shadow: 0 4px 30px rgba(209,55,55,0.25); }
+
+        /* Footer */
+        footer {
+            padding: 50px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            border-top: 1px solid var(--dark-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        .footer-left p { font-size: 0.78rem; color: var(--grey-dark); }
+        .footer-left p span { color: var(--red); }
+        .footer-socials { display: flex; gap: 24px; }
+        .footer-socials a {
+            text-decoration: none;
+            color: var(--grey-dark);
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .footer-socials a:hover { color: var(--red); }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+            nav { padding: 16px 20px; }
+            nav .links { gap: 16px; }
+            nav .links a { font-size: 0.75rem; }
+            .page-header { padding: 120px 20px 40px; }
+            .article-body { padding: 0 20px 60px; }
+            .cta-block { margin: 60px 20px; padding: 32px 24px; }
+            footer { padding: 40px 20px; flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">CALLUM <span>CARVER</span></a>
+        <div class="links">
+            <a href="/about">About</a>
+            <a href="/#philosophy">Philosophy</a>
+            <a href="/#kaizen">Skill to Profit</a>
+            <a href="/#press">Press</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="hero-tag">Blog</div>
+        <h1>How I Built The Kaizen to $100K/Month by 22</h1>
+        <p class="subtitle">Affiliate marketing at 17, getting shut down by the SEC, turning down a job that paid £7 an hour, and eventually building a coaching company that has helped over 500 people monetise their skills.</p>
+        <p class="meta">By <strong>Callum Carver</strong> <span>&middot;</span> March 2026 <span>&middot;</span> 8 min read</p>
+    </header>
+
+    <article class="article-body">
+
+        <p>People ask me how I got here, and they usually expect some clean, linear story. It wasn't. I started my first business at 17, got shut down by the SEC, lost every client I had in the space of a week, tried to sell Facebook ads without ever having a Facebook account, and turned down a proper job that worked out to £7 an hour. Most of the things I tried didn't work. The ones that did changed everything.</p>
+
+        <p>This is the real version of how I built <a href="https://thekaizen.co" target="_blank" rel="noopener">The Kaizen</a> from nothing into a company doing $100K a month with a team of 11 and over 500 students who have collectively generated more than $1.3 million in revenue.</p>
+
+        <h2>TikTok, Rich Dad Poor Dad, and the First $1,000</h2>
+
+        <p>It started with two TikTok videos when I was 17. The first was a list of five books about money. I hadn't read a book since I was twelve, but I asked my dad for a copy of <em>Rich Dad, Poor Dad</em>. Turned out he already had one stuffed in a cupboard. That book genuinely rewired how I thought about money, work, and what was possible outside the traditional path.</p>
+
+        <p>The second video was a guy in bed claiming he'd made $1,000 in affiliate commissions overnight. The idea of making money online without your own product hooked me immediately. I started posting four or five TikToks a day about finance and entrepreneurship. The content was rough — I was using <em>Wolf of Wall Street</em> audio over skits explaining how affiliate marketing worked. But the volume worked. Within five months I'd grown to over 200,000 followers.</p>
+
+        <p>Then one day, sitting in a sixth-form photography class, I got an email. My first $1,000 commission. My mates, the same ones who'd been ripping me apart in the group chat for posting on TikTok, suddenly wanted to know how I did it. That was the first time it felt genuinely real.</p>
+
+        <h2>Getting Shut Down Overnight</h2>
+
+        <p>About five months in, the affiliate company I was working with got flagged by the SEC. Under-18s had been signing up as affiliates. I was under 18. My income disappeared overnight.</p>
+
+        <p>I pivoted to brand sponsorships. My first deal was $50. Within months I'd landed a deal with Bitpanda, the European crypto platform, worth about $5,000. But sponsorships were wildly inconsistent. One big month, then three months of silence. By the end of college I had a large audience, but absolutely nothing sustainable coming out of it.</p>
+
+        <h2>The £7/Hour Crossroads</h2>
+
+        <p>Facing the end of my A-levels and pressure from everyone to pick a direction, I looked into property. I'd watched every Samuel Leeds video, every Graham Stephan video. The plan was to get into estate agency, learn the industry, and eventually become a property investor.</p>
+
+        <p>I put on a suit, printed CVs, and walked into every estate agent in my area. After several interviews, I got offered a junior role at roughly £20,000 a year. I sat down and did the maths — 40 hours a week, 52 weeks, that's about £7 an hour. I'd already made a grand in a single commission sitting in a photography class. The numbers didn't make sense.</p>
+
+        <p>After a long conversation with my family, I turned the job down. I decided to go back to basics and figure out what I could sell with the skills I already had.</p>
+
+        <h2>Five Clients, Then Zero</h2>
+
+        <p>The skill I had was social media. I'd grown an audience from nothing. I knew how content worked. So I signed up to Upwork and Fiverr as a social media manager.</p>
+
+        <p>My first client came through my sister. She worked at a local restaurant whose owner needed someone to handle their socials. I walked in, pitched the service, and landed a £400-a-month deal. Within weeks I'd signed five clients across restaurants, a crypto startup, and a fashion brand. I was making roughly £5,000 a month.</p>
+
+        <p>Then I lost every single one of them in the space of a week. The service wasn't sticky enough. A restaurant can't measure whether your Instagram posts are driving customers through the door. And creating Canva graphics for £2,000 a month was genuinely hard to justify. One client told me to my face that the work wasn't good enough. Fair play. He was right.</p>
+
+        <h2>Selling Something I Didn't Understand</h2>
+
+        <p>Determined to find a scalable model, I went down the SMMA route. Bought the courses, learned the outreach, started selling Facebook ads as a service. The problem was obvious in hindsight: <strong>I'd never run a Facebook ad in my life.</strong> I'd never even had a Facebook account.</p>
+
+        <p>The outreach worked fine. I could book calls. But the second I got on those calls, prospects could tell I didn't know what I was talking about. Every call ended the same way. I didn't believe in what I was selling, and that came through immediately.</p>
+
+        <p>Looking back, that period taught me one of the most important principles I now build everything around: never sell something you don't understand. It sounds obvious, but most people trying to start a business right now are doing exactly that — copying someone else's model without any real knowledge behind it.</p>
+
+        <h2>The Mentor Who Changed Everything</h2>
+
+        <p>I went back to someone I'd done sponsorship deals with — the founder of a crypto startup. For whatever reason, this guy would jump on calls with me even while he was raising investment rounds of £10-30 million. He was a proper mentor.</p>
+
+        <p>I explained the problem. I'd tried affiliate marketing, sponsorships, social media management, and a marketing agency. Nothing had stuck. He pointed me back to what I already knew: <strong>influencer marketing.</strong> I'd spent years building audiences, doing brand deals, and understanding how content drives revenue. That was the skill.</p>
+
+        <p>When I started selling influencer marketing services, everything clicked. I could speak from experience. I could handle objections because I'd lived on the other side of them. I coined it Social Media Influencer Pooling, built a following around it, and started teaching others how to do the same. Demand for deeper training grew organically, and I moved from agency work into high-ticket coaching alongside it.</p>
+
+        <h2>Building The Kaizen From a Newsletter</h2>
+
+        <p>I wanted to build something bigger than myself. That's when I launched <a href="https://thekaizen.co" target="_blank" rel="noopener">The Kaizen</a> — a brand focused on health, wealth, and mindset. It started as a newsletter, and I made a deliberate decision: I wouldn't sell anything until people were actively asking for it.</p>
+
+        <p>I grew that newsletter to roughly 60,000 subscribers entirely through organic social media. On Instagram, I went from zero to 200,000 followers in under a week by reposting TikTok content. I also launched Project Kaizen — a public 100-day self-improvement challenge that grew my following by another 100,000.</p>
+
+        <p>The audience was there. The demand was there. The Kaizen had become a real brand with a real community. What came next was the product that brought everything together.</p>
+
+        <h2>Testing Skill to Profit With 10 People</h2>
+
+        <p>Before scaling anything, I tested the concept. I launched a 10-person cohort. Four calls every single week, under two months, with one goal: help each person monetise a skill they already had. No copied business models. No templates. Their skill, packaged properly, sold to the right market.</p>
+
+        <p>Nearly all of them succeeded. One of them, Charlie McCormack, had dropped out of university and had no direction. He joined the cohort, started a copywriting business and a webinar agency, and now generates hundreds of thousands a month. Several members of that original cohort came back when I launched the full <a href="https://skilltoprofit.co" target="_blank" rel="noopener">Skill to Profit</a> programme — which told me everything I needed to know.</p>
+
+        <p>The full launch hit hard. My income had been slowly dropping, and it went back up to about £50,000 a month almost immediately. It was something the market hadn't really seen. Everyone else was pushing business model templates — Amazon FBA, dropshipping, copy this agency model. I was saying: how about you just do something you're already good at, and I'll teach you the framework to sell it.</p>
+
+        <h2>Proving It Publicly</h2>
+
+        <p>To demonstrate that the Skill to Profit framework works beyond my own experience, I've done multiple public speed-run challenges. Starting from zero with a brand-new skill and reaching £10,000 using the exact same framework I teach. The first one took 37 days. A subscriber replicated it in 71 days.</p>
+
+        <p>These documented challenges are some of my most-watched content because they're transparent proof that the methodology delivers. Not theory. Not promises. Documented results, start to finish.</p>
+
+        <h2>Where Callum Carver and The Kaizen Are Today</h2>
+
+        <p>The Kaizen now runs with a team of 11 across sales, coaching, customer success, and operations. Monthly revenue sits between $70,000 and $100,000, with a previous peak of $170,000. Skill to Profit has served more than 500 students who have collectively generated over $1.3 million in revenue. The programme holds a <a href="https://www.trustpilot.com/review/thekaizen.co" target="_blank" rel="noopener">4.7 out of 5 rating on Trustpilot</a> from verified student reviews.</p>
+
+        <p>I still jump on calls with students daily, helping them identify skills, build offers, and land their first paying clients. I read two books a month, train five to seven times a week, and run the business from Manchester.</p>
+
+        <p>On a personal level, I've used the income from The Kaizen to retire both of my parents. My dad now works alongside me as an operations manager. My mum doesn't have to work at all. That matters more to me than any revenue number.</p>
+
+        <h2>What I'd Tell 17-Year-Old Me</h2>
+
+        <p>Stop trying to copy someone else's business model. Every month I wasted trying to sell Facebook ads or replicate an agency template was a month I could have spent building around what I already knew. The skill was always there. The framework was always the same: find a skill, package it into an offer, find the right market, and sell it properly.</p>
+
+        <p>That's what Skill to Profit is. That's what The Kaizen exists to teach. Not a hack, not a shortcut — a genuine system for turning what you already know into something worth significantly more than what you're currently being paid for it.</p>
+
+        <p>If you're sitting in a job right now, being paid an hourly wage for a skill that other people would pay three to five times more for, the concrete hasn't set yet. But it will. The question is whether you do something about it while you still can.</p>
+
+    </article>
+
+    <div class="section-divider"></div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+        <p><strong>Want to turn your skills into a real business?</strong></p>
+        <p>Learn more about Skill to Profit and see if it's the right fit for where you are right now.</p>
+        <a href="https://skilltoprofit.co" class="cta-button" target="_blank" rel="noopener">Learn About Skill to Profit</a>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p>Callum Carver <span>&middot;</span> Founder of The Kaizen <span>&middot;</span> Turning Skills Into Profit</p>
+            <p style="margin-top: 4px;">&copy; 2026 Kaizen LTD. All rights reserved.</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/callumcarver" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@callumcarver" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://x.com/ItsCallumCarver" target="_blank" rel="noopener">X</a>
+            <a href="https://uk.linkedin.com/in/callum-carver-3392b7217" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://thekaizen.beehiiv.com" target="_blank" rel="noopener">Newsletter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
